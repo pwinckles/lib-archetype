@@ -30,7 +30,7 @@
         <maven.compiler.target>17</maven.compiler.target>
 
         <slf4j.version>2.0.7</slf4j.version>
-        <record-builder.version>36</record-builder.version>
+        <record-builder.version>3y</record-builder.version>
     </properties>
 
     <dependencies>
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.9.2</version>
+            <version>5.9.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -65,13 +65,13 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
-            <version>5.2.0</version>
+            <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.6</version>
+            <version>1.4.8</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -104,30 +104,18 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
-                <configuration>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>io.soabase.record-builder</groupId>
-                            <artifactId>record-builder-processor</artifactId>
-                            <version>${record-builder.version}</version>
-                        </path>
-                    </annotationProcessorPaths>
-                    <compilerArgs>
-                        <arg>-Aproject=${project.groupId}/${project.artifactId}</arg>
-                    </compilerArgs>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
-                <version>2.35.0</version>
+                <version>2.37.0</version>
                 <configuration>
                     <java>
                         <toggleOffOn />
                         <importOrder />
                         <removeUnusedImports />
                         <palantirJavaFormat>
-                            <version>2.28.0</version>
+                            <version>2.33.0</version>
                         </palantirJavaFormat>
                     </java>
                 </configuration>
