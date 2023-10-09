@@ -30,7 +30,7 @@
         <maven.compiler.target>17</maven.compiler.target>
 
         <slf4j.version>2.0.7</slf4j.version>
-        <record-builder.version>3y</record-builder.version>
+        <record-builder.version>37</record-builder.version>
     </properties>
 
     <dependencies>
